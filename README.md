@@ -108,8 +108,6 @@ If you do not have a signed agreement listed here, you can create one by clickin
 
 If the copyright holder for the code you are submitting changes &mdash; for example, if you start contributing code on behalf of a new company &mdash; please send email to golang-dev and let us know, so that we can make sure an appropriate agreement is completed and update the `AUTHORS` file.
 
-
-<span id="Code_review"></span>
 # Preparing a Development Environment for Contributing
 
 ## Setting up Git for submission to Gerrit
@@ -196,7 +194,6 @@ To install them, copy this text into your Git configuration file (usually `.gitc
 	sync = codereview sync
 ```
 
-<span id="help"></span>
 ### Understanding the git-codereview command
 
 After installing the `git-codereview` command, you can run
@@ -421,8 +418,7 @@ $ git change
 
 
 to update the change description and incorporate the staged changes.
-The change description contains a `Change-Id` line near the bottom, added by a Git commit hook during the initial
-`git` `change`.
+The change description contains a `Change-Id` line near the bottom, added by a Git commit hook during the initial `git` `change`.
 That line is used by Gerrit to match successive uploads of the same change.
 Do not edit or delete it.
 
