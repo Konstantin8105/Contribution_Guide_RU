@@ -1,4 +1,4 @@
-# Перевод "Руководство содействия"
+# Перевод "Руководство сотрудничества"
 
 ------
 
@@ -13,16 +13,11 @@
 
 ------
 
+Проект Go приветствует всех помощников. Процесс внесения своего вклада в проект Go может отличаться от того к чему Вы привыкли. Данный документ предназначен для того чтобы помочь Вам разобраться в  том - как внести свой вклад. Данное руковоство предполагает, что у Вас уже есть общее знания работы в Git и Go.
 
-The Go project welcomes all contributors. The process of contributing to the Go project may be different than many projects you are used to. This document is intended as a guide to help you through the contribution process. This guide assumes you have a basic understanding of Git and Go.
+(Примечание, Руководство сотрудничества для `gccgo` расположено [здесь](https://golang.org/doc/gccgo_contribute.html)
 
-
-
-(Note that the `gccgo` frontend lives elsewhere; see <a href="gccgo_contribute.html">Contributing to gccgo</a>.)
-
-
-
-Sensitive security-related issues should be reported to <a href="mailto:security@golang.org">security@golang.org</a>.
+(По воспросам связанным с безопасностью, обращайтесь по адресу security@golang.org).
 
 
 # Becoming a contributor
