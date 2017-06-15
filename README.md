@@ -62,7 +62,7 @@ This key is paired with one generated server side similar to how ssh keys work.
 
 
 Copy and run this script locally in your command line terminal.
-(On a Windows computer using cmd you should instead follow the instructions in the yellow box to run the command. If you are using git-bash use the same script as *nix.)
+(On a Windows computer using cmd you should instead follow the instructions in the yellow box to run the command. If you are using git-bash use the same script as `*nix`.)
 
 
 
