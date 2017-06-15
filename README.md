@@ -15,21 +15,18 @@
 
 Проект Go приветствует всех помощников. Процесс внесения своего вклада в проект Go может отличаться от того к чему Вы привыкли. Данный документ предназначен для того чтобы помочь Вам разобраться в  том - как внести свой вклад. Данное руковоство предполагает, что у Вас уже есть общее знания работы в Git и Go.
 
-(Примечание, Руководство сотрудничества для `gccgo` расположено [здесь](https://golang.org/doc/gccgo_contribute.html)
+(Примечание, Руководство сотрудничества для `gccgo` расположено [здесь](https://golang.org/doc/gccgo_contribute.html) )
 
 (По воспросам связанным с безопасностью, обращайтесь по адресу security@golang.org).
 
 
-# Becoming a contributor
+# Как стать помощником(соучастником)
 
-
-Before you can contribute to the Go project you need to setup a few prerequisites.
-The Go project uses <a href="https://www.gerritcodereview.com/">Gerrit</a>, an open source online tool, to perform all code reviews.
-Gerrit uses your email address as a unique identifier.
-The Go project contributing flow is currently configured to work only with Google Accounts.
-You must go through the following process <em>prior to contributing</em>.
-You only need to do this once per Google Account.
-
+Прежде чем стать помощником для проекта Go, Вам необходимо выполнить несколько условий.
+Проект Go использует [Gerrit](https://www.gerritcodereview.com/), как онлайн-инструмент с открытым исходным кодом для всестороннего рассмотрения кода.
+Gerrit использует Ваш адрес электронной почты как уникальный идентификатор.
+В проекте Go пока только настроен только на Google Accounts.
+В связи с этим, Вам необходимо *предварительно* иметь хотя бы один Google Account.
 
 ## Configure Git to use Gerrit
 
