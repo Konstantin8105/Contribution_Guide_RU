@@ -59,17 +59,17 @@ Visit [go.googlesource.com](https://go.googlesource.com) и кликните н�
 Для этого посетите страницу [ go-review.googlesource.com/login/](https://go-review.googlesource.com/login/).
 Зарегистрируйтесь используя тот же Google Account, который использовали ранее.
 
-## Contributor License Agreement
+## Лицензионное соглашение сотрудничества(Contributor License Agreement, CLA)
 
-### Which CLA
+### Какое CLA
 
-Before sending your first change to the Go project you must have completed one of the following two CLAs.
-Which CLA you should sign depends on who owns the copyright to your work.
+Перед отправкой Ваших первых изменений в проект Go Вы должны подтвердить один из двух CLA.
+Какой именно CLA Вы подпишите зависит от того кто владеет авторскими правами на Вашу работу.
 
-* If you are the copyright holder, you will need to agree to the [individual contributor license agreement](https://developers.google.com/open-source/cla/individual), which can be completed online.
-* If your organization is the copyright holder, the organization will need to agree to the [corporate contributor license agreement](https://developers.google.com/open-source/cla/corporate).
+* Если Вы являетесь владельцем авторских прав, то Вам необходимо согласиться с  [individual contributor license agreement](https://developers.google.com/open-source/cla/individual), который допускают подтверждение в онлайн.
+* Если владельцем Ваших авторских прав является организация, то организации необходимо согласиться с [corporate contributor license agreement](https://developers.google.com/open-source/cla/corporate).
 
-*If the copyright holder for your contribution has already completed the agreement in connection with another Google open source project, it does not need to be completed again.*
+*Если владелей авторских прав уже подтвердил соглашение в другом открытом проекте Google, то дополнительно подтверждать нет необходимости.*
 
 ### Completing the CLA
 
