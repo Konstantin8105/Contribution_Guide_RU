@@ -42,21 +42,16 @@ Gerrit использует Google Accounts для аутентификации.
 Visit [go.googlesource.com](https://go.googlesource.com) и кликните на  "Generate Password" в верхней правой части меню страницы.
 Вас потом перенаправит на accounts.google.com для авторизации.
 
-### Step 2: Run the provided script
+### Шаг 2: Запуск скрипта
 
-After signing in, you are taken to a page on [go.googlesource.com](go.googlesource.com) with the title "Configure Git".
-This page contains a personalized script which when run locally will configure git to have your unique authentication key.
-This key is paired with one generated server side similar to how ssh keys work.
+После регистрации, Вы попадеье на страницу [go.googlesource.com](go.googlesource.com) озаглавленный "Configure Git"(Настройка Git).
+Эта страница включает область с Вашим персональным скриптом, который при локальном запуске (на Вашем компьютере) настроет git для Вас уникальный аутентификационный ключ.
+Это ключ является одним из пары, причем один генерируется на стороне сервера, похоже на работу с ключами для ssh.
 
+Скопируйте и запустите этот скрипт в Вашем терминале командной строки.
+(На компьютере с Windows используйте программу `cmd` и используйте инструкцию в желтой области веб-страницы для запуска команд. Если же Вы используете git-bash то используйте тот же скрипт как для `*nix`)
 
-
-Copy and run this script locally in your command line terminal.
-(On a Windows computer using cmd you should instead follow the instructions in the yellow box to run the command. If you are using git-bash use the same script as `*nix`.)
-
-
-
-Your secret authentication token is now in a `.gitcookie` file and Git is configured to use this file.
-
+Ваш секретный ключ после запуска скрипта расположен в файле `.gitcookie` и теперь Git настроен для использования этого файла.
 
 ### Step 3: Register with Gerrit
 
