@@ -76,18 +76,10 @@ Sign in using the same Google Account you used above.
 Before sending your first change to the Go project you must have completed one of the following two CLAs.
 Which CLA you should sign depends on who owns the copyright to your work.
 
+* If you are the copyright holder, you will need to agree to the [individual contributor license agreement](https://developers.google.com/open-source/cla/individual), which can be completed online.
+* If your organization is the copyright holder, the organization will need to agree to the [corporate contributor license agreement](https://developers.google.com/open-source/cla/corporate).
 
-<ul>
-<li>
-If you are the copyright holder, you will need to agree to the [individual contributor license agreement](https://developers.google.com/open-source/cla/individual), which can be completed online.
-</li>
-<li>
-If your organization is the copyright holder, the organization will need to agree to the [corporate contributor license agreement](https://developers.google.com/open-source/cla/corporate).<br>
-</li>
-</ul>
-
-
-<i>If the copyright holder for your contribution has already completed the agreement in connection with another Google open source project, it does not need to be completed again.</i>
+*If the copyright holder for your contribution has already completed the agreement in connection with another Google open source project, it does not need to be completed again.*
 
 ### Completing the CLA
 
@@ -317,16 +309,16 @@ In the Go contribution workflow this is done with a `git change` command, which 
 
 
 ```
-$ git change <i>&lt;branch&gt;</i>
+$ git change *<branch>*
 ```
 
 
-The name <i>&lt;branch&gt;</i> is an arbitrary one you choose to identify the local branch containing your changes and will not be used elsewhere.
+The name *<branch>* is an arbitrary one you choose to identify the local branch containing your changes and will not be used elsewhere.
 This is an offline operation and nothing will be sent to the server yet.
 
 
 
-(In Git terms, `git` `change` `&lt;branch&gt;` runs `git` `checkout` `-b` `branch`, then `git` `branch` `--set-upstream-to` `origin/master`, then `git` `commit`.)
+(In Git terms, `git` `change` `<branch>` runs `git` `checkout` `-b` `branch`, then `git` `branch` `--set-upstream-to` `origin/master`, then `git` `commit`.)
 
 
 
@@ -504,7 +496,7 @@ You can do that with:
 
 
 ```
-$ git commit --amend --author="Author Name &lt;email@address.com&gt;"
+$ git commit --amend --author="Author Name <email@address.com>"
 ```
 
 
@@ -567,7 +559,7 @@ The reviewer approves the change by giving it a positive score (+1 or +2) and re
 
 
 
-You can see a list of your pending changes by running `git` `pending`, and switch between change branches with `git` `change` `<i>&lt;branch&gt;</i>`.
+You can see a list of your pending changes by running `git` `pending`, and switch between change branches with `git` `change` `*<branch>*`.
 
 
 ### Synchronize your client
@@ -629,27 +621,27 @@ You are currently rebasing branch 'mcgillicutty' on 'a24c3eb'.
   (use "git rebase --abort" to check out the original branch)
 
 Unmerged paths:
-  (use "git reset HEAD &lt;file&gt;..." to unstage)
-  (use "git add &lt;file&gt;..." to mark resolution)
+  (use "git reset HEAD <file>..." to unstage)
+  (use "git add <file>..." to mark resolution)
 
-	<i>both modified: sin.go</i>
+	*both modified: sin.go*
 ```
 
 
 The only important part in that transcript is the italicized "both modified" line: Git failed to merge your changes with the conflicting change.
 When this happens, Git leaves both sets of edits in the file,
-with conflicts marked by `&lt;&lt;&lt;&lt;&lt;&lt;&lt;` and `&gt;&gt;&gt;&gt;&gt;&gt;&gt;`.
+with conflicts marked by `<<<<<<<` and `>>>>>>>`.
 It is now your job to edit the file to combine them.
 Continuing the example, searching for those strings in `sin.go` might turn up:
 
 
 ```
 	arg = scale(arg)
-&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
-	if arg &lt; 1e9 {
+<<<<<<< HEAD
+	if arg < 1e9 {
 =======
-	if arg &lt; 1e10 {
-&gt;&gt;&gt;&gt;&gt;&gt;&gt; mcgillicutty
+	if arg < 1e10 {
+>>>>>>> mcgillicutty
 		largeReduce(arg)
 ```
 
@@ -660,7 +652,7 @@ First, edit the section to remove the markers and leave the correct code:
 
 ```
 	arg = scale(arg)
-	if arg &lt; 1e10 {
+	if arg < 1e10 {
 		largeReduce(arg)
 ```
 
