@@ -53,13 +53,11 @@ Visit [go.googlesource.com](https://go.googlesource.com) и кликните н�
 
 Ваш секретный ключ после запуска скрипта расположен в файле `.gitcookie` и теперь Git настроен для использования этого файла.
 
-### Step 3: Register with Gerrit
+### Шаг 3: Регистрация в Gerrit
 
-
-Now that you have your authentication token, you need to register your account with Gerrit.
-To do this, visit [ go-review.googlesource.com/login/](https://go-review.googlesource.com/login/).
-Sign in using the same Google Account you used above.
-
+Сейчас для регистрации своего ключа, Вам необходимо зарегистрировать свой аккаунт в Gerrit.
+Для этого посетите страницу [ go-review.googlesource.com/login/](https://go-review.googlesource.com/login/).
+Зарегистрируйтесь используя тот же Google Account, который использовали ранее.
 
 ## Contributor License Agreement
 
