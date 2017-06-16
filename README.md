@@ -227,14 +227,13 @@ The latter half of each cycle is a three-month feature freeze during which only 
 
 ### Getting Go Source
 
-First you need to have a local copy of the source checked out from the correct
-repository.
+First you need to have a local copy of the source checked out from the correct repository.
 As Go builds Go you will also likely need to have a working version of Go installed (some documentation changes may not need this).
 This should be a recent version of Go and can be obtained via any package or binary distribution or you can build it from source.
 
 
 
-You should checkout the Go source repo anywhere you want as long as it's outside of your $GOPATH.
+You should checkout the Go source repo anywhere you want as long as it`s outside of your $GOPATH.
 Go to a directory where you want the source to appear and run the following command in a terminal.
 
 
