@@ -101,15 +101,12 @@ $ git codereview help
 
 напечатает текст помощи, не ошибку.
 
+Если Вы используете git-bash в Windows убедитесь что программа `git-codereview.exe` расположена вашей папке git. Запустите `git --exec-path` для того чтобы открыть нужное место, затем создайте символическую ссылку или просто скопируйте исполняемый файл из $GOPATH/bin в этот каталог.
 
 
-On Windows, when using git-bash you must make sure that `git-codereview.exe` is in your git exec-path. Run `git --exec-path` to discover the right location then create a symbolic link or simply copy the executible from $GOPATH/bin to this directory.
-
-
-
-**Note to Git aficionados:**
-The `git-codereview` command is not required to upload and manage Gerrit code reviews.
-For those who prefer plain Git, the text below gives the Git equivalent of each git-codereview command.
+**Примечание для поклонников Git:**
+Команда `git-codereview` не требуется для загрузки и управления кода Gerrit рассмотрение.
+Для тех, кто предпочитает простой Git, то текст ниже предоставит эквивалентную Git команды для каждой git-codereview рассмотрения кода.
 
 
 
