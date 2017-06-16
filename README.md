@@ -108,16 +108,12 @@ $ git codereview help
 Команда `git-codereview` не требуется для загрузки и управления кода Gerrit рассмотрение.
 Для тех, кто предпочитает простой Git, то текст ниже предоставит эквивалентную Git команды для каждой git-codereview рассмотрения кода.
 
+Если Вы используете простой Git, обратите внимание, что вам все равно потребуется настройка команд `git-codereview`. Эта настройка добавляет `Change-Id` для Gerrit в сообщение фиксирования(commit) и проверки всех исходных файлов Go, который отформатирован `gofmt`.
+Даже если Вы собираетесь использовать простого Git для ежедневной работы, то настройте Git checkout запустив `git-codereview` `hooks`.
 
-
-If you do use plain Git, note that you still need the commit hooks that the git-codereview command configures; those hooks add a Gerrit `Change-Id` line to the commit message and check that all Go source files have been formatted with gofmt.
-Even if you intend to use plain Git for daily work, install the hooks in a new Git checkout by running `git-codereview` `hooks`.
-
-
-
-The workflow described below assumes a single change per branch.
-It is also possible to prepare a sequence of (usually related) changes in a single branch.
-See the [git-codereview documentation](https://golang.org/x/review/git-codereview) for details.
+Показанный ниже рабочий процесс предполагает одно изменение на ветку(branch).
+Это также предполагает подготовку последовательности (обычно связанных) изменений в одну ветку.
+Смотрите детальнее [git-codereview documentation](https://golang.org/x/review/git-codereview).
 
 
 ### Set up git aliases
