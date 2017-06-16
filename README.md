@@ -37,11 +37,10 @@ Gerrit использует Google Accounts для аутентификации.
 Если у Вас нет Google Account, то Вы можете создать его [включая новый аккаунт почты Gmail](https://www.google.com/accounts/NewAccount) или создать ассоциированный аккаунт [с имеющийся у Вас адресом электронной почты](https://accounts.google.com/SignUpWithoutGmail).
 
 
-### Step 1: Sign in to googlesource and generate a password
+### Шаг 1: Регистрация в googlesource для генерации пароля
 
-
-Visit [go.googlesource.com](https://go.googlesource.com) and click on "Generate Password" in the page's top right menu bar.
-You will be redirected to accounts.google.com to sign in.
+Visit [go.googlesource.com](https://go.googlesource.com) и кликните на  "Generate Password" в верхней правой части меню страницы.
+Вас потом перенаправит на accounts.google.com для авторизации.
 
 ### Step 2: Run the provided script
 
