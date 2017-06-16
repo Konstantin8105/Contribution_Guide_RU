@@ -28,15 +28,13 @@ Gerrit использует Ваш адрес электронной почты 
 В проекте Go пока только настроен только на Google Accounts.
 В связи с этим, Вам необходимо *предварительно* иметь хотя бы один Google Account.
 
-## Configure Git to use Gerrit
+## Настройка Git для использования Gerrit
 
-You'll need a web browser and a command line terminal.
-You should already have Git installed.
+Для этого Вам необходим веб-браузер и консоль командной строки.
+Вам необходимо иметь установленный Git.
 
-
-
-Gerrit uses Google Accounts for authentication.
-If you don't have a Google Account, you can create an account which [includes a new Gmail email account](https://www.google.com/accounts/NewAccount) or create an account associated [with your existing email address](https://accounts.google.com/SignUpWithoutGmail).
+Gerrit использует Google Accounts для аутентификации.
+Если у Вас нет Google Account, то Вы можете создать его [включая новый аккаунт почты Gmail](https://www.google.com/accounts/NewAccount) или создать ассоциированный аккаунт [с имеющийся у Вас адресом электронной почты](https://accounts.google.com/SignUpWithoutGmail).
 
 
 ### Step 1: Sign in to googlesource and generate a password
@@ -47,7 +45,7 @@ You will be redirected to accounts.google.com to sign in.
 
 ### Step 2: Run the provided script
 
-After signing in, you are taken to a page on go.googlesource.com with the title "Configure Git".
+After signing in, you are taken to a page on [go.googlesource.com](go.googlesource.com) with the title "Configure Git".
 This page contains a personalized script which when run locally will configure git to have your unique authentication key.
 This key is paired with one generated server side similar to how ssh keys work.
 
