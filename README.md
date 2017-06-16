@@ -147,15 +147,14 @@ $ git sync
 
 ### Понимание команд git-codereview
 
-After installing the `git-codereview` command, you can run
+После установки комманд `git-codereview`, вы можете запустить
 
 ```
 $ git codereview help
 ```
 
-
-to learn more about its commands.
-You can also read the [command documentation](https://godoc.org/golang.org/x/review/git-codereview).
+для того чтобы изучить эти комманды.
+Вы также можете почитать [command documentation](https://godoc.org/golang.org/x/review/git-codereview).
 
 
 
