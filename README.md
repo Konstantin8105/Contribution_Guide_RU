@@ -158,10 +158,9 @@ $ git codereview help
 
 
 
-# Making a Contribution
+# Внесение вклада (Making a Contribution)
 
-## Discuss your design
-
+## Обсудите Ваш дизайн(вопрос)
 
 The project welcomes submissions but please let everyone know what you're working on if you want to change or add to the Go repositories.
 
