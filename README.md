@@ -237,7 +237,7 @@ $ cd go
 ### Contributing to the main Go tree
 
 
-Most Go installations use a release branch, but new changes should only be made based on the master branch. <br>
+Most Go installations use a release branch, but new changes should only be made based on the master branch.
 (They may be applied later to a release branch as part of the release process, but most contributors won't do this themselves.)
 Before making a change, make sure you start on the master branch:
 
@@ -466,7 +466,7 @@ remote:   https://go-review.googlesource.com/99999 math: improved Sin, Cos and T
 
 
 The most common way that the `git mail` command fails is because the email address used has not gone through the setup above.
-<br>
+
 If you see something like...
 
 
