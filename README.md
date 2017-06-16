@@ -36,13 +36,13 @@ You should already have Git installed.
 
 
 Gerrit uses Google Accounts for authentication.
-If you don't have a Google Account, you can create an account which <a href="https://www.google.com/accounts/NewAccount">includes a new Gmail email account</a> or create an account associated <a href="https://accounts.google.com/SignUpWithoutGmail">with your existing email address</a>.
+If you don't have a Google Account, you can create an account which [includes a new Gmail email account](https://www.google.com/accounts/NewAccount) or create an account associated [with your existing email address](https://accounts.google.com/SignUpWithoutGmail).
 
 
 ### Step 1: Sign in to googlesource and generate a password
 
 
-Visit <a href="https://go.googlesource.com">go.googlesource.com</a> and click on "Generate Password" in the page's top right menu bar.
+Visit [go.googlesource.com](https://go.googlesource.com) and click on "Generate Password" in the page's top right menu bar.
 You will be redirected to accounts.google.com to sign in.
 
 ### Step 2: Run the provided script
@@ -65,7 +65,7 @@ Your secret authentication token is now in a `.gitcookie` file and Git is config
 
 
 Now that you have your authentication token, you need to register your account with Gerrit.
-To do this, visit <a href="https://go-review.googlesource.com/login/"> go-review.googlesource.com/login/</a>.
+To do this, visit [ go-review.googlesource.com/login/](https://go-review.googlesource.com/login/).
 Sign in using the same Google Account you used above.
 
 
@@ -79,10 +79,10 @@ Which CLA you should sign depends on who owns the copyright to your work.
 
 <ul>
 <li>
-If you are the copyright holder, you will need to agree to the <a href="https://developers.google.com/open-source/cla/individual">individual contributor license agreement</a>, which can be completed online.
+If you are the copyright holder, you will need to agree to the [individual contributor license agreement](https://developers.google.com/open-source/cla/individual), which can be completed online.
 </li>
 <li>
-If your organization is the copyright holder, the organization will need to agree to the <a href="https://developers.google.com/open-source/cla/corporate">corporate contributor license agreement</a>.<br>
+If your organization is the copyright holder, the organization will need to agree to the [corporate contributor license agreement](https://developers.google.com/open-source/cla/corporate).<br>
 </li>
 </ul>
 
@@ -93,7 +93,7 @@ If your organization is the copyright holder, the organization will need to agre
 
 
 You can see your currently signed agreements and sign new ones through the Gerrit interface.
-To do this, <a href="https://go-review.googlesource.com/login/">Log into Gerrit</a>, click your name in the upper-right, choose "Settings", then select "Agreements" from the topics on the left.
+To do this, [Log into Gerrit](https://go-review.googlesource.com/login/), click your name in the upper-right, choose "Settings", then select "Agreements" from the topics on the left.
 If you do not have a signed agreement listed here, you can create one by clicking "New Contributor Agreement" and following the steps.
 
 
@@ -105,7 +105,7 @@ If the copyright holder for the code you are submitting changes &mdash; for exam
 ## Setting up Git for submission to Gerrit
 
 Changes to Go must be reviewed before they are accepted, no matter who makes the change.
-A custom git command called `git-codereview`, discussed below, helps manage the code review process through a Google-hosted <a href="https://go-review.googlesource.com/">instance</a> Gerrit.
+A custom git command called `git-codereview`, discussed below, helps manage the code review process through a Google-hosted [instance](https://go-review.googlesource.com/) Gerrit.
 
 ### Install the git-codereview command
 
@@ -146,7 +146,7 @@ Even if you intend to use plain Git for daily work, install the hooks in a new G
 
 The workflow described below assumes a single change per branch.
 It is also possible to prepare a sequence of (usually related) changes in a single branch.
-See the <a href="https://golang.org/x/review/git-codereview">git-codereview documentation</a> for details.
+See the [git-codereview documentation](https://golang.org/x/review/git-codereview) for details.
 
 
 ### Set up git aliases
@@ -196,7 +196,7 @@ $ git codereview help
 
 
 to learn more about its commands.
-You can also read the <a href="https://godoc.org/golang.org/x/review/git-codereview">command documentation</a>.
+You can also read the [command documentation](https://godoc.org/golang.org/x/review/git-codereview).
 
 
 
@@ -209,8 +209,8 @@ The project welcomes submissions but please let everyone know what you're workin
 
 
 
-Before undertaking to write something new for the Go project, please <a href="https://golang.org/issue/new">file an issue</a> (or claim an <a href="https://golang.org/issues">existing issue</a>).
-Significant changes must go through the <a href="https://golang.org/s/proposal-process">change proposal process</a> before they can be accepted.
+Before undertaking to write something new for the Go project, please [file an issue](https://golang.org/issue/new) (or claim an [existing issue](https://golang.org/issues)).
+Significant changes must go through the [change proposal process](https://golang.org/s/proposal-process) before they can be accepted.
 
 
 
@@ -219,7 +219,7 @@ It also checks that the design is sound before code is written; the code review 
 
 
 
-When planning work, please note that the Go project follows a <a href="https://golang.org/wiki/Go-Release-Cycle">six-month development cycle</a>.
+When planning work, please note that the Go project follows a [six-month development cycle](https://golang.org/wiki/Go-Release-Cycle).
 The latter half of each cycle is a three-month feature freeze during which only bug fixes and doc updates are accepted. New contributions can be sent during a feature freeze but will not be accepted until the freeze thaws.
 
 
@@ -286,7 +286,7 @@ Make your changes as you see fit ensuring that you create appropriate tests alon
 
 
 Files in the Go repository don't list author names, both to avoid clutter and to avoid having to keep the lists up to date.
-Instead, your name will appear in the <a href="https://golang.org/change">change log</a> and in the <a href="/CONTRIBUTORS">`CONTRIBUTORS`</a> file and perhaps the <a href="/AUTHORS">`AUTHORS`</a> file.
+Instead, your name will appear in the [change log](https://golang.org/change) and in the <a href="/CONTRIBUTORS">`CONTRIBUTORS`</a> file and perhaps the <a href="/AUTHORS">`AUTHORS`</a> file.
 These files are automatically generated from the commit logs perodically.
 The <a href="/AUTHORS">`AUTHORS`</a> file defines who &ldquo;The Go Authors&rdquo;&mdash;the copyright holders&mdash;are.
 
@@ -385,9 +385,9 @@ It is best to keep unrelated changes in different change lists, so if you see a 
 
 
 The special notation "Fixes #159" associates the change with issue 159 in the
-<a href="https://golang.org/issue/159">Go issue tracker</a>.
+[Go issue tracker](https://golang.org/issue/159).
 When this change is eventually applied, the issue tracker will automatically mark the issue as fixed.
-(There are several such conventions, described in detail in the <a href="https://help.github.com/articles/closing-issues-via-commit-messages/">GitHub Issue Tracker documentation</a>.)
+(There are several such conventions, described in detail in the [GitHub Issue Tracker documentation](https://help.github.com/articles/closing-issues-via-commit-messages/).)
 
 
 
@@ -422,7 +422,7 @@ Do not edit or delete it.
 ### Testing
 
 
-You've <a href="code.html">written and tested your code</a>, but before sending code out for review, run all the tests for the whole tree to make sure the changes don't break other packages or programs:
+You've [written and tested your code](code.html), but before sending code out for review, run all the tests for the whole tree to make sure the changes don't break other packages or programs:
 
 
 ```
@@ -520,7 +520,7 @@ $ git mail
 
 
 Unless explicitly told otherwise, such as in the discussion leading up to sending in the change list, it's better not to specify a reviewer.
-All changes are automatically CC'ed to the <a href="https://groups.google.com/group/golang-codereviews">golang-codereviews@googlegroups.com</a> mailing list. If this is your first ever change, there may be a moderation delay before it appears on the mailing list, to prevent spam.
+All changes are automatically CC'ed to the [golang-codereviews@googlegroups.com](https://groups.google.com/group/golang-codereviews) mailing list. If this is your first ever change, there may be a moderation delay before it appears on the mailing list, to prevent spam.
 
 
 
@@ -711,4 +711,4 @@ Since the method used to integrate the changes is "Cherry Pick", the commit hash
 ## More information
 
 
-In addition to the information here, the Go community maintains a <a href="https://golang.org/wiki/CodeReview">CodeReview</a> wiki page. Feel free to contribute to this page as you learn the review process.
+In addition to the information here, the Go community maintains a [CodeReview](https://golang.org/wiki/CodeReview) wiki page. Feel free to contribute to this page as you learn the review process.
