@@ -115,33 +115,25 @@ $ git codereview help
 Это также предполагает подготовку последовательности (обычно связанных) изменений в одну ветку.
 Смотрите детальнее [git-codereview documentation](https://golang.org/x/review/git-codereview).
 
+### Настройка git-псевдонимов(git aliases)
 
-### Set up git aliases
-
-
-The `git-codereview` command can be run directly from the shell by typing, for instance,
-
+Команда `git-codereview` может быть запущено прямо из командной строки, например:
 
 ```
 $ git codereview sync
 ```
 
-
-but it is more convenient to set up aliases for `git-codereview`'s own subcommands, so that the above becomes,
-
+Но будет удобнее если настроить псевдонимы для команд `git-codereview`, так что выше превращается в:
 
 ```
 $ git sync
 ```
 
 
-The `git-codereview` subcommands have been chosen to be distinct from Git's own, so it's safe to do so.
+Подкоманда `git-codereview` были выбраны таким образом чтобы отличились от собственных команд Git, так что использование безопастно.
 
-
-
-The aliases are optional, but in the rest of this document we will assume they are installed.
-To install them, copy this text into your Git configuration file (usually `.gitconfig` in your home directory):
-
+Псевдонимы не обязательны, но в дальнейшем в этом документе, мы будем предполагать что они установлены.
+Для установки их, необходимо скопировать следующий текст в Ваш конфигурационный файл Git(обычно это файл в домашней папке `.gitconfig`):
 
 ```
 [alias]
@@ -153,7 +145,7 @@ To install them, copy this text into your Git configuration file (usually `.gitc
 	sync = codereview sync
 ```
 
-### Understanding the git-codereview command
+### Понимание команд git-codereview
 
 After installing the `git-codereview` command, you can run
 
