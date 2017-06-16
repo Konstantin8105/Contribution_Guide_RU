@@ -71,16 +71,12 @@ Visit [go.googlesource.com](https://go.googlesource.com) и кликните н�
 
 *Если владелей авторских прав уже подтвердил соглашение в другом открытом проекте Google, то дополнительно подтверждать нет необходимости.*
 
-### Completing the CLA
+### Завершение CLA
 
+Вы можете увидеть подписанное Вами соглашение и подписать ещё одно через интерфейс Gerrit.
+Для этого, [войдите в свой аккаунт Gerrit](https://go-review.googlesource.com/login/), кликните на Вашем имени в вверхнем правом углу и выбирете "Settings"("Настройки"), потом выбирете "Agreements"(Соглашения) слево вверху. Но если у Вас нет подписанных соглашений описанных тут, то Вы можете создать новый кликнув на "New Contributor Agreement" и действовать по следующим шагам.
 
-You can see your currently signed agreements and sign new ones through the Gerrit interface.
-To do this, [Log into Gerrit](https://go-review.googlesource.com/login/), click your name in the upper-right, choose "Settings", then select "Agreements" from the topics on the left.
-If you do not have a signed agreement listed here, you can create one by clicking "New Contributor Agreement" and following the steps.
-
-
-
-If the copyright holder for the code you are submitting changes &mdash; for example, if you start contributing code on behalf of a new company &mdash; please send email to golang-dev and let us know, so that we can make sure an appropriate agreement is completed and update the `AUTHORS` file.
+Если Вы владелец авторских прав на код, который Вы будуте отправлять изменения - к примеру, если Вы начинаете вводить код от имени новой компании - то пожайлуста отправьте электронное письмо golang-dev и дайте нам знать, чтобы мы могли убедиться, что соответствующее соглашение будет завершено и обновим файл `AUTHORS`(авторы).
 
 # Preparing a Development Environment for Contributing
 
@@ -269,7 +265,7 @@ Make your changes as you see fit ensuring that you create appropriate tests alon
 Files in the Go repository don't list author names, both to avoid clutter and to avoid having to keep the lists up to date.
 Instead, your name will appear in the [change log](https://golang.org/change) and in the <a href="/CONTRIBUTORS">`CONTRIBUTORS`</a> file and perhaps the <a href="/AUTHORS">`AUTHORS`</a> file.
 These files are automatically generated from the commit logs perodically.
-The <a href="/AUTHORS">`AUTHORS`</a> file defines who &ldquo;The Go Authors&rdquo;&mdash;the copyright holders&mdash;are.
+The <a href="/AUTHORS">`AUTHORS`</a> file defines who &ldquo;The Go Authors&rdquo;-the copyright holders-are.
 
 
 New files that you contribute should use the standard copyright header:
