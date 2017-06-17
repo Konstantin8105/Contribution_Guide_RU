@@ -313,15 +313,11 @@ Fixes #159
 $ git change
 ```
 
+для обновления описания изменения и включить поэтапные изменения.
+Описание изменений включает в себя строку `Change-Id` где-то внизу, добавленный `git` `change`.
+Данная строка используется Gerrit как признак соответствия (match) для загрузки одинаковых изменений. Не редактируйте и не удаляйте его.
 
-to update the change description and incorporate the staged changes.
-The change description contains a `Change-Id` line near the bottom, added by a Git commit hook during the initial `git` `change`.
-That line is used by Gerrit to match successive uploads of the same change.
-Do not edit or delete it.
-
-
-
-(In Git terms, `git` `change` with no branch name runs `git` `commit` `--amend`.)
+(В терминологии Git, `git` `change` без имени ветки запускает `git` `commit` `--amend`.)
 
 
 ### Testing
