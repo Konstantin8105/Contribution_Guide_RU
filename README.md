@@ -358,13 +358,11 @@ remote: New Changes:
 remote:   https://go-review.googlesource.com/99999 math: improved Sin, Cos and Tan precision for very large arguments
 ```
 
-### Troubleshooting
+### Решение проблем
 
+Самая распространенная причина по которой команда `git mail` даёт сбой, заключается в том, что используемый адрес электронной почты не прошел через вышеприведённую настройку.
 
-The most common way that the `git mail` command fails is because the email address used has not gone through the setup above.
-
-If you see something like...
-
+Вы увидите что то вроде...
 
 ```
 remote: Processing changes: refs: 1, done
@@ -374,13 +372,9 @@ remote: ERROR:  author email address XXXXXXXXXXXXXXXXXXX
 remote: ERROR:  does not match your user account.
 ```
 
+Для решения Вам нужно либо добавить адрес электронной почты, указанный в CLA, либо установить данный репозитарий для  использования другого утверждённого адреса электронной почты.
 
-You need to either add the email address listed to the CLA or set this repo to use another email address already approved.
-
-
-
-First let's change the email address for this repo so this doesn't happen again. You can change your email address for this repo with the following command:
-
+Во первых давайте изменим адрес электронной почты для данного репозитария, чтобы этого не повторялось, и используйте следующую команду:
 
 ```
 $ git config user.email email@address.com
