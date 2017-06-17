@@ -337,29 +337,21 @@ $ ./all.bash
 "ALL TESTS PASSED".
 ```
 
-### Send the change for review
+### Отправка изменений на рассмотрение(review)
 
-
-Once the change is ready, send it for review.
-This is similar to a `git push` in a GitHub style workflow.
-This is done via the mail alias setup earlier which despite its name, doesn't directly mail anything, it simply sends the change to Gerrit via git push.
-
+Как только изменение будет готово, отправляйте их на рассмотрение.
+Это похоже на `git push` в стиле рабочего процесса GitHub.
+Это делается с помощью настройки псевдонима `mail`, которая не смотря на своё имя не отправляет почту, а лишь отправляет изменения в Gerrit как git push.
 
 ```
 $ git mail
 ```
 
+(В терминологии Git, `git` `mail` отправляет локальные зафиксированные изменения в Gerrit используя `git` `push` `origin` `HEAD:refs/for/master`.)
 
-(In Git terms, `git` `mail` pushes the local committed changes to Gerrit using `git` `push` `origin` `HEAD:refs/for/master`.)
+Если Ваше изменение связано с открытой проблемой(issue), то добавьте комментарий в проблему(issue) о предлагаемом исправлении, включая ссылку на Ваш CL.
 
-
-
-If your change relates to an open issue, please add a comment to the issue announcing your proposed fix, including a link to your CL.
-
-
-
-The code review server assigns your change an issue number and URL, which `git` `mail` will print, something like:
-
+Сервер рассмотрения кода присваевает Вашему изменению номер и URL, который `git` `mail` напечатает, приблизительно следующим образом:
 
 ```
 remote: New Changes:
