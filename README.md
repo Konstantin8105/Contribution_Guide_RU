@@ -393,17 +393,13 @@ $ git commit --amend --author="Author Name <email@address.com>"
 $ git mail
 ```
 
-### Specifying a reviewer / CCing others
+### Указание рецензента и заинтересованных сторон
 
+Если явно не указано иное, например, в обсуждении, предшествовавшем отправке в список изменений, лучше не указывать рецензента.
+Все изменения автоматически включаются в список рассылки [golang-codereviews@googlegroups.com](https://groups.google.com/group/golang-codereviews). Если это ваше первое изменение, возможно, задержка перед появлением в списке рассылки, это сделано для предотвращения спама в рассылке.
 
-Unless explicitly told otherwise, such as in the discussion leading up to sending in the change list, it's better not to specify a reviewer.
-All changes are automatically CC'ed to the [golang-codereviews@googlegroups.com](https://groups.google.com/group/golang-codereviews) mailing list. If this is your first ever change, there may be a moderation delay before it appears on the mailing list, to prevent spam.
-
-
-
-You can specify a reviewer or CC interested parties using the `-r` or `-cc` options.
-Both accept a comma-separated list of email addresses:
-
+Вы можете указать рецензент или заинтересованные стороны CC, используя опции `-r` или` -cc`.
+Оба принимают список адресов электронной почты, разделенный запятыми:
 
 ```
 $ git mail -r joe@golang.org -cc mabel@example.com,math-nuts@swtch.com
