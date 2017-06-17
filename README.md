@@ -320,24 +320,18 @@ $ git change
 (В терминологии Git, `git` `change` без имени ветки запускает `git` `commit` `--amend`.)
 
 
-### Testing
+### Тестирование
 
-
-You've [written and tested your code](code.html), but before sending code out for review, run all the tests for the whole tree to make sure the changes don't break other packages or programs:
-
+Вы должны [написать и протестировать свой код](https://golang.org/doc/code.html), но перед отправкой кода на рассмотрение, запустите Ваши тесты для всего дерева для того чтобы убедиться что Ваше изменение не ломает другие пакеты и программы:
 
 ```
 $ cd go/src
 $ ./all.bash
 ```
 
+(Для проветки в Windows используйте`all.bat`.)
 
-(To build under Windows use `all.bat`.)
-
-
-
-After running for a while, the command should print
-
+После прохождения всех команд должно напечататься:
 
 ```
 "ALL TESTS PASSED".
