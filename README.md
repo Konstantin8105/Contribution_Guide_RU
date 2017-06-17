@@ -199,18 +199,15 @@ $ git sync
 
 (В терминологии Git, `git` `sync` запускает `git` `pull` `-r`.)
 
-### Contributing to subrepositories (golang.org/x/...)
+### Вклад в подрепозитории (golang.org/x/...)
 
-
-If you are contributing a change to a subrepository, obtain the Go package using `go get`. For example, to contribute to `golang.org/x/oauth2`, check out the code by running:
-
+Если Вы хотите внести изменения в подрепозитории, то его можно получить используя `go get`. К примеру, для внесения изменений в `golang.org/x/oauth2`, необходимо запустить:
 
 ```
 $ go get -d golang.org/x/oauth2/...
 ```
 
-
-Then, change your directory to the package's source directory (`$GOPATH/src/golang.org/x/oauth2`).
+Затем Вы можете зайти в паку пакета (`$GOPATH/src/golang.org/x/oauth2`).
 
 
 ### Make your changes
