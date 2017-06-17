@@ -429,20 +429,16 @@ $ git mail -r joe@golang.org -cc mabel@example.com,math-nuts@swtch.com
 
 Вы можете просмотреть список ожидающих изменений, запустив `git`` pending` и переключаться между ветвями изменений с помощью `git`` change` `* <branch> *`.
 
-### Synchronize your client
+### Синхронизация своего клиента
 
-
-While you were working, others might have submitted changes to the repository.
-To update your local branch, run
-
+Пока вы работали, другие могли внести изменения в репозиторий.
+Чтобы обновить локальную ветвь, запустите:
 
 ```
 $ git sync
 ```
 
-
-(In git terms, `git` `sync` runs `git` `pull` `-r`.)
-
+(В терминалогии Git, `git` `sync` запускает `git` `pull` `-r`.)
 
 ### Resolving Conflicts
 
