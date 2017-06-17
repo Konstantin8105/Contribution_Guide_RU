@@ -233,30 +233,23 @@ $ go get -d golang.org/x/oauth2/...
 В заголовке авторских прав в файлах репозитория участвует число - год.
 Не обновляйте год в файлах, которые меняете.
 
-### Commit your changes
+### Фиксирование Ваших изменений
 
+После того как измените файлы, необходимо сообщить Git об изменениях.
+Также Вам необходимо сообщить Git о всех добавленных, удаленных или переименованных файлах.
+Данные операции выполняються обычными командами Git: `git` `add`, `git` `rm`, and `git` `mv`.
 
-Once you have edited files, you must tell Git that they have been modified.
-You must also tell Git about any files that are added, removed, or renamed files.
-These operations are done with the usual Git commands, `git` `add`, `git` `rm`, and `git` `mv`.
-
-
-
-Once you have the changes queued up, you will want to commit them.
-In the Go contribution workflow this is done with a `git change` command, which creates a local branch and commits the changes directly to that local branch.
-
+После того как все изменения были внесены и поставленны в очередь, необходимо их зафиксировать(commit).
+В рабочем процессе внесения изменений в проект Go это производиться командой `git change`, которая создает локальльную ветку и фиксирует изменения напрямую в этой локальной ветке.
 
 ```
-$ git change *<branch>*
+$ git change <branch>
 ```
 
+Имя ветки(*<branch>*) может быть любым для идентификации локальной ветки Ваших изменений и не может быть использовано в любом другом месте.
+Это операция локальная, при которой ничего не будет отправлено на сервер.
 
-The name *<branch>* is an arbitrary one you choose to identify the local branch containing your changes and will not be used elsewhere.
-This is an offline operation and nothing will be sent to the server yet.
-
-
-
-(In Git terms, `git` `change` `<branch>` runs `git` `checkout` `-b` `branch`, then `git` `branch` `--set-upstream-to` `origin/master`, then `git` `commit`.)
+(В терминологии Git, `git` `change` `<branch>` запускает `git` `checkout` `-b` `branch`, потом `git` `branch` `--set-upstream-to` `origin/master`, и потом `git` `commit`.)
 
 
 
