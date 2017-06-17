@@ -93,7 +93,7 @@ Visit [go.googlesource.com](https://go.googlesource.com) и кликните н�
 $ go get -u golang.org/x/review/git-codereview
 ```
 
-Убедитесь что `git-codereview` установился в Вашу папку, как же команда `git` может найти его. Проверим это:
+Убедитесь что `git-codereview` установился в Вашу папку, так чтобы команда `git` могла найти его. Проверим это:
 
 ```
 $ git codereview help
@@ -160,23 +160,16 @@ $ git codereview help
 
 ## Обсудите Ваш дизайн(вопрос)
 
-The project welcomes submissions but please let everyone know what you're working on if you want to change or add to the Go repositories.
+Проект приветствует Вашу работу, но пожайлуста дайте знать о том над чем Вы работаете в случаи если хотите что то изменить или добавить в репозитории Go.
 
+До того как приступить к внесению изменений или добавлению чего-то нового, просьба записать Вашу проблему в [файл проблем (issue)](https://golang.org/issue/new) (или заявить в  файле [существующие проблемы](https://golang.org/issues)).
+Существенные изменения должны пройти процесс [формирования предложения](https://golang.org/s/proposal-process) до того как они будут приняты.
 
+Этот процесс даёт всем возможность проверить дизайн, позволяет избежать дублирования усилий, а также убедится что заложенная идея удовлетворяет целям языка и инструментарию.
+Также это проверка на то что дизайн звучит хорошо, так как рассмотрение кода не место для высокоуровневой беседы.
 
-Before undertaking to write something new for the Go project, please [file an issue](https://golang.org/issue/new) (or claim an [existing issue](https://golang.org/issues)).
-Significant changes must go through the [change proposal process](https://golang.org/s/proposal-process) before they can be accepted.
-
-
-
-This process gives everyone a chance to validate the design, helps prevent duplication of effort, and ensures that the idea fits inside the goals for the language and tools.
-It also checks that the design is sound before code is written; the code review tool is not the place for high-level discussions.
-
-
-
-When planning work, please note that the Go project follows a [six-month development cycle](https://golang.org/wiki/Go-Release-Cycle).
-The latter half of each cycle is a three-month feature freeze during which only bug fixes and doc updates are accepted. New contributions can be sent during a feature freeze but will not be accepted until the freeze thaws.
-
+При планировании Вашей работы, пожайлуста следите за [шести-месячным циклом разработки проекта Go](https://golang.org/wiki/Go-Release-Cycle).
+Вторая половина каждого цикла - это трех месячная замораживание функций, в течение которого принимаются только исправления ошибок и обновляется документация. Новые вклады в проект могут быть отложены на время замораживания функций, и по ним не будут приниматься какие-либо решения до наступления разморозки.
 
 ## Making a change
 
