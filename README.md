@@ -380,18 +380,14 @@ remote: ERROR:  does not match your user account.
 $ git config user.email email@address.com
 ```
 
-
-Then change the previous commit to use this alternative email address.
-You can do that with:
-
+После этого измените предедущую фиксацию(commit) для использования альтернативного адреса электронной почты.
+Вы можете сделать это с помощью:
 
 ```
 $ git commit --amend --author="Author Name <email@address.com>"
 ```
 
-
-Finally try to resend with:
-
+И теперь попробуйте повторно отправить:
 
 ```
 $ git mail
