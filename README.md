@@ -529,20 +529,15 @@ $ git fetch https://go.googlesource.com/review refs/changes/21/1221/1 &amp;&amp;
 
 Для того, чтобы вернуться в ветку с которой Вы работали.
 
-## Apply the change to the master branch
+## Использование изменений в ветке master
 
+После того, как код был `LGTM`, одобритель может применить его к мастер-ветке с использованием интерфейса Gerrit.
+На веб-странице есть кнопка «Отправить» для изменения, которое появляется после утверждения изменения (с пометкой +2).
 
-After the code has been `LGTM`'ed, an approver may apply it to the master branch using the Gerrit UI.
-There is a "Submit" button on the web page for the change that appears once the change is approved (marked +2).
+Эти изменения проверяються в репозитарии.
+Описание изменения будет содержать ссылку на обзор кода, а обзор кода будет обновлен ссылкой на изменение в репозитории.
+Поскольку метод, используемый для интеграции изменений, - «Cherry Pick», хеши фиксации в репозитории будут изменены операцией «Отправить».
 
+## Дополнительная информация
 
-
-This checks the change into the repository.
-The change description will include a link to the code review, and the code review will be updated with a link to the change in the repository.
-Since the method used to integrate the changes is "Cherry Pick", the commit hashes in the repository will be changed by the "Submit" operation.
-
-
-## More information
-
-
-In addition to the information here, the Go community maintains a [CodeReview](https://golang.org/wiki/CodeReview) wiki page. Feel free to contribute to this page as you learn the review process.
+В дополнение к информации здесь, сообщество Go поддерживает страницу вики-страницы [CodeReview](https://golang.org/wiki/CodeReview). Не стесняйтесь вносить свой вклад в эту страницу, когда вы изучаете процесс обзора.
