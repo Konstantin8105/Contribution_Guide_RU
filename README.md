@@ -156,8 +156,6 @@ $ git codereview help
 для того чтобы изучить эти комманды.
 Вы также можете почитать [command documentation](https://godoc.org/golang.org/x/review/git-codereview).
 
-
-
 # Внесение вклада (Making a Contribution)
 
 ## Обсудите Ваш дизайн(вопрос)
@@ -190,7 +188,7 @@ This should be a recent version of Go and can be obtained via any package or bin
 
 
 
-You should checkout the Go source repo anywhere you want as long as it`s outside of your $GOPATH.
+You should checkout the Go source repo anywhere you want as long as it's outside of your $GOPATH.
 Go to a directory where you want the source to appear and run the following command in a terminal.
 
 
@@ -213,8 +211,7 @@ $ git sync
 ```
 
 
-(In Git terms, `git` `sync` runs
-`git` `pull` `-r`.)
+(In Git terms, `git` `sync` runs `git` `pull` `-r`.)
 
 
 ### Contributing to subrepositories (golang.org/x/...)
@@ -244,7 +241,7 @@ Make your changes as you see fit ensuring that you create appropriate tests alon
 Files in the Go repository don't list author names, both to avoid clutter and to avoid having to keep the lists up to date.
 Instead, your name will appear in the [change log](https://golang.org/change) and in the <a href="/CONTRIBUTORS">`CONTRIBUTORS`</a> file and perhaps the <a href="/AUTHORS">`AUTHORS`</a> file.
 These files are automatically generated from the commit logs perodically.
-The <a href="/AUTHORS">`AUTHORS`</a> file defines who &ldquo;The Go Authors&rdquo;-the copyright holders-are.
+The <a href="/AUTHORS">`AUTHORS`</a> file defines who "The Go Authors"-the copyright holders-are.
 
 
 New files that you contribute should use the standard copyright header:
@@ -539,8 +536,7 @@ $ git sync
 ```
 
 
-(In git terms, `git` `sync` runs
-`git` `pull` `-r`.)
+(In git terms, `git` `sync` runs `git` `pull` `-r`.)
 
 
 ### Resolving Conflicts
