@@ -405,15 +405,13 @@ $ git mail
 $ git mail -r joe@golang.org -cc mabel@example.com,math-nuts@swtch.com
 ```
 
-## Going through the review process
+## Прохождение процесса рассмотрения
 
-
-Running `git` `mail` will send an email to you and the reviewers asking them to visit the issue's URL and make comments on the change.
-When done, the reviewer adds comments through the Gerrit user interface and clicks "Reply" to send comments back.
-You will receive a mail notification when this happens.
-You must reply through the web interface.
-(Unlike with the old Rietveld review system, replying by mail has no effect.)
-
+Запустив `git` `mail` будет отослано электронное писмо Вам и рецензентам с просьбой посетить URL проблемы и сделать комментарии к изменению.
+Когда это будет сделано, то рецензент добавляет комментарий через пользовательский интерфейс Gerrit и кликнув "Ответить"("Reply") для того чтобы отправить комментари.
+Когда это произойдет, Вы получите письмо с уведомлением.
+Вы должны отвечать только через веб-интерфейс.
+(К сожалению, использование старой системы рассмотрений Rietveld, отвечая на письма показывала свою не эффективность.)
 
 ### Revise and resend
 
