@@ -440,16 +440,13 @@ $ git sync
 
 (В терминалогии Git, `git` `sync` запускает `git` `pull` `-r`.)
 
-### Resolving Conflicts
+### Устранение конфликтов
 
+Если файлы, которые вы редактировали, изменились, Git делает все возможное, чтобы объединить удаленные изменения в ваши локальные изменения.
+Он может оставить некоторые файлы для объединения вручную.
 
-If files you were editing have changed, Git does its best to merge the remote changes into your local changes.
-It may leave some files to merge by hand.
-
-
-
-For example, suppose you have edited `sin.go` but someone else has committed an independent change.
-When you run `git` `sync`, you will get the (scary-looking) output:
+Например, предположим, что вы отредактировали `sin.go`, но кто-то еще совершил независимое изменение.
+Когда вы запускаете `git`` sync`, вы получите (страшный) вывод:
 
 ```
 $ git sync
@@ -462,18 +459,14 @@ If you prefer to skip this patch, run "git rebase --skip" instead.
 To check out the original branch and stop rebasing, run "git rebase --abort".
 ```
 
-
-If this happens, run
-
+Если это произойдет, запустите
 
 ```
 $ git status
 ```
 
-
-to see which files failed to merge.
-The output will look something like this:
-
+чтобы посмотреть, какие файлы не удалось слить.
+Результат будет выглядеть примерно так:
 
 ```
 rebase in progress; onto a24c3eb
@@ -489,13 +482,11 @@ Unmerged paths:
 	*both modified: sin.go*
 ```
 
-
-The only important part in that transcript is the italicized "both modified" line: Git failed to merge your changes with the conflicting change.
-When this happens, Git leaves both sets of edits in the file,
-with conflicts marked by `<<<<<<<` and `>>>>>>>`.
-It is now your job to edit the file to combine them.
-Continuing the example, searching for those strings in `sin.go` might turn up:
-
+Единственная важная часть в этом расшифровке - это выделенная курсивом «измененная» строка: Git не смог объединить ваши изменения с конфликтующими изменениями.
+Когда это произойдет, Git оставляет оба набора изменений в файле,
+С конфликтами, отмеченными `<<<<<<<` и `>>>>>>>`.
+Теперь ваша работа заключается в редактировании файла для их объединения.
+Продолжая пример, поиск этих строк в `sin.go` может появиться:
 
 ```
 	arg = scale(arg)
@@ -507,10 +498,8 @@ Continuing the example, searching for those strings in `sin.go` might turn up:
 		largeReduce(arg)
 ```
 
-
-Git doesn't show it, but suppose the original text that both edits started with was 1e8; you changed it to 1e10 and the other change to 1e9, so the correct answer might now be 1e10.
-First, edit the section to remove the markers and leave the correct code:
-
+Git не показывает это, но предположим, что исходный текст, который начался с обеих редакций, был 1e8; Вы изменили его на 1e10, а другое изменилось на 1e9, поэтому правильный ответ теперь может быть 1e10.
+Сначала отредактируйте раздел, чтобы удалить маркеры и оставить правильный код:
 
 ```
 	arg = scale(arg)
@@ -518,18 +507,14 @@ First, edit the section to remove the markers and leave the correct code:
 		largeReduce(arg)
 ```
 
-
-Then tell Git that the conflict is resolved by running
-
+Затем сообщите Git, что конфликт разрешен путем запуска
 
 ```
 $ git add sin.go
 ```
 
-
-If you had been editing the file, say for debugging, but do not care to preserve your changes, you can run `git` `reset` `HEAD` `sin.go` to abandon your changes.
-Then run `git` `rebase` `--continue` to restore the change commit.
-
+Если вы редактировали файл, скажем, для отладки, но не хотите сохранять свои изменения, вы можете запустить `git`` reset`` HEAD`` sin.go`, чтобы отказаться от ваших изменений.
+Затем запустите `git`` rebase`` -continue`, чтобы восстановить фиксацию(commit) изменений.
 
 ### Reviewing code by others
 
