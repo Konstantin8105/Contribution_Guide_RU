@@ -186,13 +186,11 @@ $ git clone https://go.googlesource.com/go
 $ cd go
 ````
 
-### Contributing to the main Go tree
+### Довабление в основное дерево Go
 
-
-Most Go installations use a release branch, but new changes should only be made based on the master branch.
-(They may be applied later to a release branch as part of the release process, but most contributors won't do this themselves.)
-Before making a change, make sure you start on the master branch:
-
+Неибольшее установок Go использует ветку release, но новые изменения должны основываться на ветве master.
+(Позже они могут быть приняты в ветку release как чать процесса release, но большенство участников не сделают сами.)
+До того как внести изменения, убедитесь что Вы начинаете с ветки master:
 
 ```
 $ git checkout master
@@ -200,7 +198,7 @@ $ git sync
 ```
 
 
-(In Git terms, `git` `sync` runs `git` `pull` `-r`.)
+(В терминологии Git, `git` `sync` запускает `git` `pull` `-r`.)
 
 
 ### Contributing to subrepositories (golang.org/x/...)
