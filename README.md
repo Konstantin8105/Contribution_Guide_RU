@@ -294,31 +294,20 @@ Fixes #159
 #
 ```
 
+Закомментирована секция файла со списком всех измененных файлов.
+Хорошей практикой будет разделять несвязанные изменения по разным изменениям, поэтому если Вы видете что в списке появляется файл которого не должно быть, то отмените команду и разделите файлы по разным веткам.
 
-The commented section of the file lists all the modified files in your client.
-It is best to keep unrelated changes in different change lists, so if you see a file listed that should not be included, abort the command and move that file to a different branch.
-
-
-
-The special notation "Fixes #159" associates the change with issue 159 in the
+Специальное обозначение "Fixes #159" означает ссылку на проблему(issue) 159
 [Go issue tracker](https://golang.org/issue/159).
-When this change is eventually applied, the issue tracker will automatically mark the issue as fixed.
-(There are several such conventions, described in detail in the [GitHub Issue Tracker documentation](https://help.github.com/articles/closing-issues-via-commit-messages/).)
+Когда изменение будет принято, то трекер проблем (the issue tracker) автоматически отметит проблему решенной.
+(Существует множество соглашений, подробно описанных в [GitHub Issue Tracker documentation](https://help.github.com/articles/closing-issues-via-commit-messages/).)
 
+Закончив писать сообщение фиксации(the commit message), созраните файл и выйдите из редактора.
 
+Вы должны быть уверены, что имеете в своей среде переменную $EDITOR и работает правильно для успешного завершения.
+Если Вы столкнетесь к какими либо проблемами, то выйдите из редактора некорректно. Тогда попробуйте настроить другой редактор в переменную $EDITOR Вашей среды.
 
-Once you have finished writing the commit message, save the file and exit the editor.
-
-
-
-You must have the $EDITOR environment variable set properly and working properly (exiting cleanly) for this operation to succeed.
-If you run into any issues at this step, it's likely your editor isn't exiting cleanly.
-Try setting a different editor in your $EDITOR environment variable.
-
-
-
-If you wish to do more editing, re-stage your changes using `git` `add`, and then run
-
+Если Вы желаете отредоктировать больше, то перегруппируйте(re-stage) свои изменения с помощью  `git` `add`, и потом запустите
 
 ```
 $ git change
