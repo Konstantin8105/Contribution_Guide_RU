@@ -516,22 +516,18 @@ $ git add sin.go
 Если вы редактировали файл, скажем, для отладки, но не хотите сохранять свои изменения, вы можете запустить `git`` reset`` HEAD`` sin.go`, чтобы отказаться от ваших изменений.
 Затем запустите `git`` rebase`` -continue`, чтобы восстановить фиксацию(commit) изменений.
 
-### Reviewing code by others
+### Просмотр кода другими пользователями
 
+В рамках процесса обзора рецензенты могут предлагать изменения напрямую (в рабочем процессе GitHub это будет кто-то другой, связанный с запросом на перенос(pull request)).
 
-As part of the review process reviewers can propose changes directly (in the GitHub workflow this would be someone else attaching commits to a pull request).
-
-You can import these changes proposed by someone else into your local Git repository.
-On the Gerrit review page, click the "Download ▼" link in the upper right corner, copy the "Checkout" command and run it from your local Git repo. It should look something like this:
-
+Вы можете импортировать эти изменения, предложенные кем-то еще, в свой локальный репозиторий Git.
+На странице обзора Gerrit нажмите ссылку "Download ▼" в правом верхнем углу, скопируйте командой «Checkout» и запустите ее в своем локальном репозитории Git. Он должен выглядеть примерно так:
 
 ```
 $ git fetch https://go.googlesource.com/review refs/changes/21/1221/1 &amp;&amp; git checkout FETCH_HEAD
 ```
 
-
-To revert, change back to the branch you were working in.
-
+Для того, чтобы вернуться в ветку с которой Вы работали.
 
 ## Apply the change to the master branch
 
