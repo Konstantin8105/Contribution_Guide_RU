@@ -413,34 +413,21 @@ $ git mail -r joe@golang.org -cc mabel@example.com,math-nuts@swtch.com
 Вы должны отвечать только через веб-интерфейс.
 (К сожалению, использование старой системы рассмотрений Rietveld, отвечая на письма показывала свою не эффективность.)
 
-### Revise and resend
+### Перепросмотр и повторная отправка
 
+Рабочий рабочий процесс Go оптимизирован для итеративных изменений на основе обратной связи.
+Редко, что первоначальный взнос будет готов к применению, как есть.
+По мере того, как вы пересматриваете свои изменения и отправляете повторно, Gerrit сохранит историю всех изменений и комментариев, в одном URL-адресе.
 
-The Go contribution workflow is optimized for iterative revisions based on
-feedback.
-It is rare that an initial contribution will be ready to be applied as is.
-As you revise your contribution and resend Gerrit will retain a history of all the changes and comments made in the single URL.
+Вы должны отвечать только через веб-интерфейс.
 
+Когда вы пересмотрели код и готовы к очередному раунду рассмотрения, сделайте эти изменения и используйте `git`` change` для обновления фиксации(commit).
+Чтобы отправить список изменений для другого раунда рассмотрения, снова запустите `git`` mail`.
 
+Рецензент может прокомментировать новую копию, и процесс повторяется.
+Рецензент одобряет изменение, давая ему положительный результат (+1 или +2) и отвечающий `LGTM`: выглядит хорошо для меня.
 
-You must respond to review comments through the web interface.
-(Unlike with the old Rietveld review system, responding by mail has no effect.)
-
-
-
-When you have revised the code and are ready for another round of review, stage those changes and use `git` `change` to update the
-commit.
-To send the update change list for another round of review, run `git` `mail` again.
-
-
-
-The reviewer can comment on the new copy, and the process repeats.
-The reviewer approves the change by giving it a positive score (+1 or +2) and replying `LGTM`: looks good to me.
-
-
-
-You can see a list of your pending changes by running `git` `pending`, and switch between change branches with `git` `change` `*<branch>*`.
-
+Вы можете просмотреть список ожидающих изменений, запустив `git`` pending` и переключаться между ветвями изменений с помощью `git`` change` `* <branch> *`.
 
 ### Synchronize your client
 
