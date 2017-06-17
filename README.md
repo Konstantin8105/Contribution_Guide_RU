@@ -267,19 +267,15 @@ $ git change <branch>
 #
 ```
 
+В начале данного файла будет пустая строка, дополните её описанием Вашего изменения.
+Данная строка будет использоваться для однострочного суммарного изменения, префиксом для основнго изменяемого пакета, а также будет использоваться в качестве темы электронных писем при рассмотрению кода.
+Он должен заканчиваться предложением "This change modifies Go to _____."
+Остальная часть описания должна описывать процесс разработки, изменения и пояснения как это работает.
+Запись должна производиться с правильной пунктуацией, как и Ваши комментратии в Go.
+Если уВас есть поясняющая ссылка, то добавьте её.
+Если Вы исправляете проблему(issue), то укажите её номер прежде всего.
 
-At the beginning of this file is a blank line; replace it with a thorough description of your change.
-The first line of the change description is conventionally a one-line summary of the change, prefixed by the primary affected package, and is used as the subject for code review email.
-It should complete the sentence "This change modifies Go to _____."
-The rest of the description elaborates and should provide context for the change and explain what it does.
-Write in complete sentences with correct punctuation, just like for your comments in Go.
-If there is a helpful reference, mention it here.
-If you've fixed an issue, reference it by number with a # before it.
-
-
-
-After editing, the template might now read:
-
+После редактирования, шаблон можно будут читать:
 
 ```
 math: improve Sin, Cos and Tan precision for very large arguments
