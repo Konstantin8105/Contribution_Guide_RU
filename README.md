@@ -197,9 +197,7 @@ $ git checkout master
 $ git sync
 ```
 
-
 (В терминологии Git, `git` `sync` запускает `git` `pull` `-r`.)
-
 
 ### Contributing to subrepositories (golang.org/x/...)
 
