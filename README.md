@@ -210,12 +210,10 @@ $ go get -d golang.org/x/oauth2/...
 Затем Вы можете зайти в паку пакета (`$GOPATH/src/golang.org/x/oauth2`).
 
 
-### Make your changes
+### Создание изменений
 
-
-The entire checked-out tree is editable.
-Make your changes as you see fit ensuring that you create appropriate tests along with your changes. Test your changes as you go.
-
+Все полученное дерево - изменяемо.
+Сделайте Ваши изменения как Вы сочтете нужным, добавте тестов для Ваших изменений. Проверьте Ваши изменения как Вам кажется нужно.
 
 ### Copyright
 
