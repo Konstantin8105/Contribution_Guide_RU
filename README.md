@@ -171,20 +171,16 @@ $ git codereview help
 При планировании Вашей работы, пожайлуста следите за [шести-месячным циклом разработки проекта Go](https://golang.org/wiki/Go-Release-Cycle).
 Вторая половина каждого цикла - это трех месячная замораживание функций, в течение которого принимаются только исправления ошибок и обновляется документация. Новые вклады в проект могут быть отложены на время замораживания функций, и по ним не будут приниматься какие-либо решения до наступления разморозки.
 
-## Making a change
+## Внесение изменений
 
-### Getting Go Source
+### Забирание исходных кодов проекта Go
 
-First you need to have a local copy of the source checked out from the correct repository.
-As Go builds Go you will also likely need to have a working version of Go installed (some documentation changes may not need this).
-This should be a recent version of Go and can be obtained via any package or binary distribution or you can build it from source.
+Для начала Вам необходимо иметь локальную копию репозитория.
+Как и Go builds проекту Go также потребуется рабочая и установленная версия Go  (некоторые изменения в документации могут быть не актуальны).
+Это должна быть последняя, актуальная версия Go, которая может быть получена через любой пакет, исполняемый дистрибутив или Вы можете сформировать её из исходных кодов.
 
-
-
-You should checkout the Go source repo anywhere you want as long as it's outside of your $GOPATH.
-Go to a directory where you want the source to appear and run the following command in a terminal.
-
-
+Вы можете выгрузить репозиторий Go куда Вас нравиться даже за пределами Вашего  $GOPATH.
+Зайдите в папку, куда хотели бы выгрузить исходные коды и запустите следующую команду в теминале командной строки.
 ````
 $ git clone https://go.googlesource.com/go
 $ cd go
