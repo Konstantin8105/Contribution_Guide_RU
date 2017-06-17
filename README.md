@@ -253,14 +253,12 @@ $ git change <branch>
 
 
 
-As the `git commit` is the final step, Git will open an editor to ask for a commit message.
-(It uses the editor named by the `$EDITOR` environment variable, `vi` by default.)
+Поскольку `git commit` является конечным шагом, то Git откроет для Вас редактор для запроса фиксирующего сообщения (commit message).
+(Он использует редактор под именем `$EDITOR` в Вашей среде, по умолчанию используется `vi`.)
 
-The file will look like:
-
+Файл будет выглядить следующим образом:
 
 ```
-
 # Please enter the commit message for your changes. Lines starting
 # with '#' will be ignored, and an empty message aborts the commit.
 # On branch foo
