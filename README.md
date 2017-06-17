@@ -215,16 +215,14 @@ $ go get -d golang.org/x/oauth2/...
 Все полученное дерево - изменяемо.
 Сделайте Ваши изменения как Вы сочтете нужным, добавте тестов для Ваших изменений. Проверьте Ваши изменения как Вам кажется нужно.
 
-### Copyright
+### Авторские права
 
+Файлы в репозитории Go не имеют списка авторов, для того чтобы избежать беспорядка и для того чтобы избежать обновления списков.
+Вместо этого, Ваше имя будет внесено в [файл изменений (change log)](https://golang.org/change), а также в список [помощников(CONTRIBUTORS)](https://golang.org/CONTRIBUTORS) и возможно в список [авторов(AUTHORS)](https://golang.org/AUTHORS).
+Данные файлы генерируются автоматически исходя из `commit logs`.
+Файл [авторов(AUTHORS)](https://golang.org/AUTHORS) определяет кто такие "The Go Authors(Авторы Go)" - владельцы авторских прав.
 
-Files in the Go repository don't list author names, both to avoid clutter and to avoid having to keep the lists up to date.
-Instead, your name will appear in the [change log](https://golang.org/change) and in the <a href="/CONTRIBUTORS">`CONTRIBUTORS`</a> file and perhaps the <a href="/AUTHORS">`AUTHORS`</a> file.
-These files are automatically generated from the commit logs perodically.
-The <a href="/AUTHORS">`AUTHORS`</a> file defines who "The Go Authors"-the copyright holders-are.
-
-
-New files that you contribute should use the standard copyright header:
+Для новых файлов, которые Вы вносите, должен быть использован стандартный заголовок авторских прав:
 
 ```
 // Copyright 2017 The Go Authors. All rights reserved.
@@ -232,10 +230,8 @@ New files that you contribute should use the standard copyright header:
 // license that can be found in the LICENSE file.
 ```
 
-
-Files in the repository are copyright the year they are added.
-Do not update the copyright year on files that you change.
-
+В заголовке авторских прав в файлах репозитория участвует число - год.
+Не обновляйте год в файлах, которые меняете.
 
 ### Commit your changes
 
