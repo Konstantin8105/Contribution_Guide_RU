@@ -3,9 +3,15 @@
 ------
 
 Оригинал смотри: https://golang.org/doc/contribute.html
-
-
 `go version go1.8.3 linux/amd64`
+
+------
+
+**Список дополнительных материалов:**
+* [Руководство сотрудничества](https://github.com/Konstantin8105/Contribution_Guide_RU)
+* [Эффективный Go](https://github.com/Konstantin8105/Effective_Go_RU)
+
+------
 
 # Оглавление
 ------
@@ -643,3 +649,11 @@ $ git fetch https://go.googlesource.com/review refs/changes/21/1221/1 &amp;&amp;
 [^](#Оглавление)
 
 В дополнение к информации здесь, сообщество Go поддерживает страницу вики-страницы [CodeReview](https://golang.org/wiki/CodeReview). Не стесняйтесь вносить свой вклад в эту страницу, когда вы изучаете процесс обзора.
+
+------
+
+**Список дополнительных материалов:**
+* [Руководство сотрудничества](https://github.com/Konstantin8105/Contribution_Guide_RU)
+* [Эффективный Go](https://github.com/Konstantin8105/Effective_Go_RU)
+
+------
